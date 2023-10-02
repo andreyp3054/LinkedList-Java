@@ -1,21 +1,21 @@
 public class Main {
     public static void main(String[] args) {
-        LinkedList LinkedListSample = new LinkedList();
-        LinkedListSample.addFirst(1);
-        LinkedListSample.addLast(2);
-        LinkedListSample.addFirst(3);
-        LinkedListSample.addLast(4);
+        LinkedList<String> linkedListSample = new LinkedList<>();
 
-        LinkedListSample.addInBetween(5, 2, 4);
-        LinkedListSample.removeInBetween(2, 4);
-        LinkedListSample.addInBetween(5, 3, 1);
+        linkedListSample.addFirst("TIGER");
+        linkedListSample.addFirst("LION");
 
-        LinkedListSample.removeLast();
-        LinkedListSample.removeLast();
-        LinkedListSample.removeFirst();
-        LinkedListSample.removeFirst();
-        LinkedListSample.removeLast();
+        linkedListSample.addLast("ZEBRA");
 
-        System.out.println(LinkedListSample);
+        linkedListSample.addInBetween("BOBCAT", "LION");
+        linkedListSample.removeInBetween("LION", "ZEBRA");
+
+        linkedListSample.addLast("WOLF");
+        linkedListSample.removeLast();
+//        linkedListSample.addFirst(3);
+        linkedListSample.removeFirst();
+
+        System.out.println(linkedListSample);
+
     }
 }
